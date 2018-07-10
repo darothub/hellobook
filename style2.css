@@ -30,19 +30,27 @@ header h1{
     grid-area: content;
     background-image: url('/img/books.gif');
     background-size: cover;
-    height: 500px;
+    height: 650px;
     margin-bottom: 0px;
     margin-top: 20px;
+    grid-template-areas: 
+        "image image"
+  }
+
+  .content img{
+      grid-column: 1/2;
+      grid-area: image;
+      height: 100%;
   }
 
   .content h1{
       font-family: 'Courier New', Courier, monospace;
       font-size: 60px;
       color: white;
-      grid-column: 1/2;
+      grid-column: 1;
       text-align: center;
       text-transform: uppercase;
-      margin-top:10px;
+      margin-top:80px;
       text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px,   #000 0px 0px 1px;
       
   }
@@ -50,9 +58,10 @@ header h1{
   .content p{
       font-family: 'Courier New', Courier, monospace;
       text-align: center;
-      color: white;
-      font-size: 16px;
-      margin:0px;
+      color: orangered;
+      font-size: 26px;
+      margin-top:90px;
+      font-weight: bold;
   }
 
   
