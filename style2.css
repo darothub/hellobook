@@ -28,20 +28,15 @@ header h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-area: content;
-    background-image: url('/img/books.gif');
+    background-image: url("img/books.gif");
     background-size: cover;
-    height: 650px;
+    height: 500px;
     margin-bottom: 0px;
     margin-top: 20px;
-    grid-template-areas: 
-        "image image"
+   
   }
 
-  .content img{
-      grid-column: 1/2;
-      grid-area: image;
-      height: 100%;
-  }
+ 
 
   .content h1{
       font-family: 'Courier New', Courier, monospace;
@@ -62,6 +57,7 @@ header h1{
       font-size: 26px;
       margin-top:90px;
       font-weight: bold;
+      text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px,   #000 0px 0px 1px;
   }
 
   
