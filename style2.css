@@ -25,6 +25,8 @@ header h1{
 }
 
   .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-area: content;
     background-image: url('/img/books.gif');
     background-size: cover;
@@ -37,9 +39,10 @@ header h1{
       font-family: 'Courier New', Courier, monospace;
       font-size: 60px;
       color: white;
+      grid-column: 1/2;
       text-align: center;
       text-transform: uppercase;
-      margin-top:100px;
+      margin-top:10px;
       text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px,   #000 0px 0px 1px;
       
   }
