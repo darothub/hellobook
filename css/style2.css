@@ -1,0 +1,116 @@
+nav{
+    grid-area:nav;
+    display: inline-block;
+    background-color: lightgreen;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+header {
+    grid-area: header;
+    background-color:lightgreen;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header h1{
+    margin-left:20px;
+    color:orangered;
+}
+
+  .content {
+    grid-area: content;
+    background-image: url('/img/books.jpg');
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .content h1{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top:100px;
+      text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px,   #000 0px 0px 1px;
+      
+  }
+
+  .content p{
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      margin:0px;
+  }
+
+  
+  .button{
+      grid-area: button;
+      margin-top: 0px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: lightgreen;
+      grid-column: 1/4;
+      height: 40px;
+  }
+  button{
+      padding: 5px;
+      background-color: orangered;
+  }
+  .button input{
+      padding:5px;
+      grid-column: 2;
+      background-color: lightblue;
+      margin-left:px;
+  }
+  .list{
+      grid-area: list;
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column:1/4;
+      grid-row: 6;
+      margin-left:50px;
+  }
+
+  .list ul li a{
+      font-family: 'Courier New', Courier, monospace;
+      color:green;
+  }
+
+  h4{
+    grid-row: 5; 
+    grid-column: 1/4;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .footer {
+    grid-area: footer;
+    grid-row: 7;
+    text-align: center;
+    background: orangered;
+  }
+  .wrapper {
+    width:100%;
+    display: grid;
+    margin:0 auto;
+    max-width: 960px;
+    grid-column-gap: 0;
+    grid-row-gap: 0px;
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas:
+      "header nav"
+      "content content"
+      "footer footer"
+      "button button"
+      "list list"
+  }
