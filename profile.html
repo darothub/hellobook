@@ -20,15 +20,32 @@
         <section class="content">
             <div class="profile-img"></div>
             <section class="content-head">
-                <div class="book-add"><a href="#">Add</a></div>
-                <div class="book-view"><a href="#">View </a></div>
+                <div class="book-add" id="book-add"><a href="#" id="link1" onclick= 'return displayAdd()' >Add</a></div>
+                <div class="book-view"><a href="#" onclick= 'return display()'>View </a></div>
                 <div class="book-borrow"><a href="#">Borrow</a></div>
             </section>
         </section>
+
+        <section id="addBook">
+            <form>
+                <input type="text" placeholder="Name of book">
+                <input type="text" placeholder="Name of author">
+                <input type="text" placeholder="Publisher">
+                <input type="text" placeholder="Pages">
+                <input type="text" placeholder="Year">
+                <div class="submit"><a href="#">Add</a></div>
+                <div class="submit"><a href="#">Clear</a></div>
+            </form>
+        </section>
+
+        <section id="displayitem" style="display:none;">
+            <a href="#"><p id=""></p></a>
+        </section>
        
         
-        <footer class="footer">darotbookshop 2018 </footer>
+        <footer class="footer">darotbookshop 2018 &copy; </footer>
             
     </section>
+    <script src="js/profile.js"></script>
 </body>
 </html>
